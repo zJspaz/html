@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de computação</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    <p>Por favor, preencha o formulário abaixo e clique no botão <b>Enviar Mensagem</b>. Agradecemos por seu contato.</p>
+
+    <form>
+
+        <fieldset>
+            <legend>Dados Básicos</legend>
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="seunome@dominio.com.br" id="email">
+            <label for="website">Website</label>
+            <input type="text" value="http://" id="website">
+        </fieldset>
+
+        <fieldset>
+            <legend>Seu curso no Instituto de Computação</legend>
+            <input type="radio" name="curso" value="cc" id="cc"><label for="cc">Ciência da Computação</label>
+            <input type="radio" name="curso" value="si" id="si"><label for="si">Sistemas de Informação</label>
+            <input type="radio" name="curso" value="ec" id="ec"><label for="ec">Engenharia da Computação</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Assinale as linguagens já usadas por você</legend>
+            <label for="java">Java</label>
+            <input type="checkbox" name="ling" value="java" id="java">
+            <label for="c">C</label>
+            <input type="checkbox" name="ling" value="c" id="c">
+            <label for="cpp">C++</label>
+            <input type="checkbox" name="ling" value="cpp" id="cpp">
+            <label for="perl">Perl</label>
+            <input type="checkbox" name="ling" value="perl" id="perl">
+            <label for="py">Python</label>
+            <input type="checkbox" name="ling" value="py" id="py">
+            <label for="ecma">Javascript</label>
+            <input type="checkbox" name="ling" value="ecma" id="ecma">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Complementares</legend>
+
+            <label for="color">Cor Favorita</label>
+            <input type="color" id="color">
+
+            <label for="birthDate">Data de Nascimento</label>
+            <input type="date">
+
+            <label for="startDateCourse">Ano de Entrada em seu Curso do IComp</label>
+            <input type="number">
+
+            <label for="feedbackSite">Nota para este site</label>
+            <input type="range">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de atuação</legend>
+
+            <select name="area" id="area">
+                <option value="1">Banco de Dados</option>
+                <option value="2">Educação a Distância</option>
+                <option value="3">Engenharia de Software</option>
+                <option value="4">Otimização</option>
+                <option value="5">Programação para a Web</option>
+                <option value="6">Recuperação de Informação</option>
+                <option value="7">Redes de Computadores</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Submeta seu currículo vitae</legend>
+            <input type="file">
+        </fieldset>
+
+        <fieldset>
+            <legend>Digite sua mensagem</legend>
+            <textarea placeholder="Este é o valor padrão" rows="8" cols="60"></textarea>
+        </fieldset>
+
+    <div class="actionButtons">
+        <button type="reset">Resetar Dados</button>
+        <button type="submit">Enviar Mensagem</button>
+    </div>
+    </form>
+</body>
+</html>
